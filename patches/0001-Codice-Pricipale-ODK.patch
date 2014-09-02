@@ -1,0 +1,17 @@
+From db378a460de7c292c46dbf1590e02bd3c71b643a Mon Sep 17 00:00:00 2001
+Message-Id: <db378a460de7c292c46dbf1590e02bd3c71b643a.1409663054.git.4bilavorocnr@gmail.com>
+From: FraneODK <4bilavorocnr@gmail.com>
+Date: Mon, 1 Sep 2014 14:12:08 +0200
+Subject: [PATCH] Codice Pricipale ODK
+
+In questo file Genereremo il codice principale per il nostro lavoro con
+ODK
+---
+ 0 files changed
+
+diff --git a/Codice Sorgente ODK.txt b/Codice Sorgente ODK.txt
+new file mode 100644
+index 0000000..e69de29
+-- 
+1.7.9.5
+

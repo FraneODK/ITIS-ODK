@@ -1,0 +1,26 @@
+From 240a8930b9ee6b07cf4ab67b18285f642ad70d37 Mon Sep 17 00:00:00 2001
+Message-Id: <240a8930b9ee6b07cf4ab67b18285f642ad70d37.1409662739.git.4bilavorocnr@gmail.com>
+From: FraneODK <4bilavorocnr@gmail.com>
+Date: Tue, 2 Sep 2014 14:27:55 +0200
+Subject: [PATCH] cazzate varie
+
+---
+ Codice Sorgente ODK.txt |    4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Codice Sorgente ODK.txt b/Codice Sorgente ODK.txt
+index 3b2521b..f9bed44 100644
+--- a/Codice Sorgente ODK.txt	
++++ b/Codice Sorgente ODK.txt	
+@@ -1,5 +1,5 @@
+-Secondo giorno di stage
++Ã¹aiofdnasjofbasjkfbajkfbbafbSecondo giorno di stage
+ ancora non è morto nessuno
+ 
+ E' stato modificato!!
+-Successiva modifica
+\ No newline at end of file
++Successiva modifica
+-- 
+1.7.9.5
+
