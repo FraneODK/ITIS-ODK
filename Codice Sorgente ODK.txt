@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 s<<<<<<< HEAD
 <<<<<<< HEAD
 ùaiofdnasjofbasjkfbajkfbbafbSecondo giorno di stage
@@ -13,3 +14,6 @@ LO VEDI????
 >>>>>>> 5da7c4db22d3b3d52b06ac5955096b0f3d164693
 ciaoooo biancoo blblblbl mhhhhhh polpossoooooo
 pasdaskjdasjdasjkdka
+=======
+Ripulizia!
+>>>>>>> 999f71fd7f56da7881fc8e3d7ba0f849c123b229
