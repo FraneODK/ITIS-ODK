@@ -1,0 +1,137 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Prova</h:title>
+    <model>
+      <instance>
+        <data id="build_Prova_1410162159">
+          <meta>
+            <instanceID/>
+          </meta>
+          <Nome/>
+          <Eta/>
+          <datan/>
+          <luogo/>
+          <Scegli/>
+          <tipi/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/Nome:label">
+            <value>Come ti chiami?</value>
+          </text>
+          <text id="/data/Nome:hint">
+            <value>Dimmi il tuo Nome</value>
+          </text>
+          <text id="/data/Nome:constraintMsg">
+            <value>Come ti chiami?</value>
+          </text>
+          <text id="/data/Eta:label">
+            <value>Quanti anni hai?</value>
+          </text>
+          <text id="/data/Eta:hint">
+            <value>Numero anni</value>
+          </text>
+          <text id="/data/datan:label">
+            <value>Quando sei nato?</value>
+          </text>
+          <text id="/data/datan:hint">
+            <value>Data di nascita</value>
+          </text>
+          <text id="/data/luogo:label">
+            <value>Dove sei ora?</value>
+          </text>
+          <text id="/data/Scegli:label">
+            <value>Scegli il tuo Pokemon</value>
+          </text>
+          <text id="/data/Scegli:option0">
+            <value>Charmender</value>
+          </text>
+          <text id="/data/Scegli:option1">
+            <value>Bulbasaur</value>
+          </text>
+          <text id="/data/Scegli:option2">
+            <value>Squirtle</value>
+          </text>
+          <text id="/data/tipi:label">
+            <value>Tipi Preferiti</value>
+          </text>
+          <text id="/data/tipi:hint">
+            <value></value>
+          </text>
+          <text id="/data/tipi:option0">
+            <value>acqua</value>
+          </text>
+          <text id="/data/tipi:option1">
+            <value>Fuoco</value>
+          </text>
+          <text id="/data/tipi:option2">
+            <value>Erba</value>
+          </text>
+          <text id="/data/tipi:option3">
+            <value>Terra</value>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+      <bind nodeset="/data/Nome" type="string" required="true()" constraint="(regex(., &quot;^.{3,10}$&quot;))" jr:constraintMsg="jr:itext('/data/Nome:constraintMsg')"/>
+      <bind nodeset="/data/Eta" type="int" required="true()"/>
+      <bind nodeset="/data/datan" type="date" required="true()"/>
+      <bind nodeset="/data/luogo" type="geopoint" required="true()"/>
+      <bind nodeset="/data/Scegli" type="select1"/>
+      <bind nodeset="/data/tipi" type="select"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/Nome">
+      <label ref="jr:itext('/data/Nome:label')"/>
+      <hint ref="jr:itext('/data/Nome:hint')"/>
+    </input>
+    <input ref="/data/Eta">
+      <label ref="jr:itext('/data/Eta:label')"/>
+      <hint ref="jr:itext('/data/Eta:hint')"/>
+    </input>
+    <input ref="/data/datan">
+      <label ref="jr:itext('/data/datan:label')"/>
+      <hint ref="jr:itext('/data/datan:hint')"/>
+    </input>
+    <input ref="/data/luogo">
+      <label ref="jr:itext('/data/luogo:label')"/>
+    </input>
+    <select1 ref="/data/Scegli">
+      <label ref="jr:itext('/data/Scegli:label')"/>
+      <item>
+        <label ref="jr:itext('/data/Scegli:option0')"/>
+        <value>fuoco</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/Scegli:option1')"/>
+        <value>erba</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/Scegli:option2')"/>
+        <value>acqua</value>
+      </item>
+    </select1>
+    <select ref="/data/tipi">
+      <label ref="jr:itext('/data/tipi:label')"/>
+      <hint ref="jr:itext('/data/tipi:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/tipi:option0')"/>
+        <value>acqua</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/tipi:option1')"/>
+        <value>fuoco</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/tipi:option2')"/>
+        <value>erba</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/tipi:option3')"/>
+        <value>terra</value>
+      </item>
+    </select>
+  </h:body>
+</h:html>
